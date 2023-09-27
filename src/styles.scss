@@ -27,3 +27,17 @@ body {
 .container {
     padding: 0 10em;
 }
+
+.button {
+        background-color: var(--cyan);
+        color: var(--white);
+        border: none;
+        font-weight: 700;
+        cursor: pointer;
+        text-transform: capitalize;
+
+        &:hover {
+            transition: 0.3s;
+            background-color: var(--cyanHover);
+          }
+}
