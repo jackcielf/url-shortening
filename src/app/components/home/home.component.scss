@@ -107,6 +107,16 @@
     flex-grow: 1;
     gap: 1em;
     margin-top: 6em;
+position: relative;
+
+.line {
+  width: 100%;
+  position: absolute;
+  background-color: var(--cyan);
+  padding: 5px;
+  margin-top: 5em;
+  
+}
 
     .recognition {
       .img-box {
@@ -174,11 +184,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-flex-direction: column;
+  flex-direction: column;
 
-h2 {
-  font-size: 2em;
-  color: var(--white);
+  h2 {
+    font-size: 2em;
+    color: var(--white);
   }
 
   button {
