@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { ShorteningUrlComponent } from './components/shortening-url/shortening-url.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +13,6 @@ import { ShorteningUrlComponent } from './components/shortening-url/shortening-u
     HomeComponent,
     HeaderComponent,
     FooterComponent,
-    ShorteningUrlComponent
   ],
   imports: [
     BrowserModule,
