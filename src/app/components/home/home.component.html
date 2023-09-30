@@ -20,9 +20,11 @@
             [(ngModel)]="inputValue"
             placeholder="Shorten a link here..."
             [ngClass]="noValid ? 'input_alert' : ''"
+            (keyup)="verifyInput()"
           />
           <p [ngClass]="noValid ? 'show_p' : ''">Please add a link</p>
         </div>
+        <p>{{linkEncurtado}}</p>
         <button (click)="submit()" class="button">Shorten it!</button>
       </div>
 
