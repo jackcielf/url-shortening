@@ -22,17 +22,16 @@
             [ngClass]="noValid ? 'input_alert' : ''"
             (keyup)="verifyInput()"
           />
-          <p [ngClass]="noValid ? 'show_p' : ''">Please add a link</p>
+          <p [ngClass]="noValid ? 'show_p' : ''">{{ alert_message }}</p>
         </div>
-        <p>{{linkEncurtado}}</p>
         <button (click)="submit()" class="button">Shorten it!</button>
       </div>
 
-      <div class="list">
-        <span>https://www.frontendmentor.io/home</span>
-        <div class="link-shortening-btn">
-          <span>https://www.sdlk</span>
-          <button>{{ copiedLink ? "Copied!" : "Copy" }}</button>
+      <div class="list__container">
+        <button [ngClass]="disabled ? 'disabledButtonClearList' : ''" class="btn__clear" (click)="deleteUrls()">Clear</button>
+        <div class="list" *ngFor="let url of urlList">
+          <div class="short">{{ url.longUrl }}</div>
+          <span>{{ url.shortUrl }}</span>
         </div>
       </div>
 

@@ -71,6 +71,7 @@
           bottom: -35px;
           font-style: italic;
           color: var(--red);
+          font-size: 0.9em;
         }
 
         .show_p {
@@ -94,8 +95,7 @@
             color: var(--red);
           }
         }
-      } 
-
+      }
 
       button {
         width: 210px;
@@ -104,7 +104,59 @@
       }
     }
 
-    .list {
+    .list__container {
+      width: 100%;
+      max-height: 320px;
+      overflow-x: hidden;
+      overflow-y: scroll;
+      position: relative;
+
+      .btn__clear {
+        position: relative;
+        bottom: 0;
+        cursor: pointer;
+        border: none;
+        background-color: red;
+        color: var(--white);
+        padding: 0.5em 2em;
+        font-size: 0.5em;
+        opacity: 0.5;
+        border-radius: 3px;
+      }
+
+      .disabledButtonClearList {
+        background-color: var(--darkblue);
+      }
+
+      .list {
+        // display: none;
+        width: 100%;
+        padding: 1em 2em;
+        margin-top: 1em;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: var(--white);
+        border-radius: 7px;
+
+        .short {
+          max-width: 60%;
+          white-space: nowrap;
+          overflow-y: hidden;
+          overflow-x: scroll;
+        }
+
+        .short::-webkit-scrollbar {
+          display: none;
+        }
+
+        span {
+          color: var(--cyan);
+        }
+      }
+    }
+
+    .list__container::-webkit-scrollbar {
       display: none;
     }
   }

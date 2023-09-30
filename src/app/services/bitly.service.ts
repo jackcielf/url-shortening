@@ -1,14 +1,13 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class BitlyService {
   private apiKey = 'a9678634bc6aabb535ecb15af1913a408002ec62';
-  private apiUrl = environment.apiUrl;
+  private apiUrl = 'https://api-ssl.bitly.com/v4/shorten';
 
   constructor(private http: HttpClient) {}
 
