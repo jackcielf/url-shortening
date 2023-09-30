@@ -14,16 +14,8 @@
   <div id="url-container">
     <div class="container">
       <div class="input-box">
-        <div class="div-input">
-          <input
-            type="text"
-            [(ngModel)]="inputValue"
-            placeholder="Shorten a link here..."
-            [ngClass]="noValid ? 'input_alert' : ''"
-          />
-          <p [ngClass]="noValid ? 'show_p' : ''">Please add a link</p>
-        </div>
-        <button (click)="submit()" class="button">Shorten it!</button>
+        <input type="text" placeholder="Shorten a link here..." />
+        <button class="button">Shorten it!</button>
       </div>
 
       <div class="list">
@@ -71,7 +63,7 @@
         </div>
       </section>
     </div>
-
+    
     <section id="boost-your-links-container">
       <h2>Boost your links today</h2>
       <button class="button">Get Started</button>

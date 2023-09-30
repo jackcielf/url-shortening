@@ -61,40 +61,14 @@
       background-size: cover;
       background-color: var(--darkviolet);
 
-      .div-input {
+      input {
         width: 100%;
-        position: relative;
-
-        p {
-          display: none;
-          position: absolute;
-          bottom: -35px;
-          font-style: italic;
-          color: var(--red);
-        }
-
-        .show_p {
-          display: block;
-        }
-
-        input {
-          width: 100%;
-          padding: 1em 1.5em;
-          border-radius: 7px;
-          background-color: var(--white);
-          color: var(--verydarkviolet);
-          border: 1px solid var(--white);
-        }
-
-        .input_alert {
-          border-color: var(--red);
-
-          &::placeholder {
-            color: var(--red);
-          }
-        }
-      } 
-
+        padding: 1em 1.5em;
+        border-radius: 7px;
+        background-color: var(--white);
+        color: var(--verydarkviolet);
+        border: none;
+      }
 
       button {
         width: 210px;
