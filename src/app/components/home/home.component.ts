@@ -26,6 +26,7 @@ export class HomeComponent implements OnInit {
   }
 
   shortenUrl(): void {
+    alert("Site em etapa de testes, perdoe-me se houver algum erro! --_^_^_--")
     this.bitlyService.shortenLink(this.inputValue).subscribe((response) => {
       this.linkShorten = response.link;
       this.saveUrl(this.inputValue, this.linkShorten);
